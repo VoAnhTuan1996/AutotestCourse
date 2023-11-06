@@ -25,20 +25,26 @@ public class Homework_Day09_Bai4 {
                 break;
         }
         driver.get(url);
-        driver.manage().window().fullscreen();
-        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         loginCustomerAccount();
-        Thread.sleep(8000);
+        Thread.sleep(18000);
         driver.quit();
     }
 
-    public static void loginCustomerAccount(){
+    public static void loginCustomerAccount() throws InterruptedException {
         String text = "test";
-        WebElement txtUsernameField = driver.findElement(By.xpath("//input[@id='liabiltyLoginCustId']"));
-        txtUsernameField.sendKeys(text);
-        WebElement btnLogin = driver.findElement(By.id("continuelogin"));
-        btnLogin.click();
-        System.out.println(txtUsernameField.getAttribute("value").equals(text));
+        driver.switchTo().frame("login_page");
+        WebElement userIDTxtbox = driver.findElement(By.xpath("//input[@name='fldLoginUserId']"));
+        userIDTxtbox.sendKeys("test");
+        WebElement btnContinue = driver.findElement(By.xpath("//a[text()='CONTINUE']"));
+        btnContinue.click();
+        WebElement customerIdField = driver.findElement(By.id("forgotCustId"));
+        WebElement passwordField = driver.findElement(By.id("forgotPassword"));
+        if(customerIdField.isDisplayed()==true && passwordField.isDisplayed()==true){
+            System.out.println("Verification Passed");
+        }
+        else{
+            System.out.println("Verification failed");
+        }
     }
 }

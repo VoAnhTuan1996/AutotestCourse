@@ -52,7 +52,10 @@ public class Homework_Day09_Bai1 {
                 //verify
                 WebElement emailField = driver.findElement(By.xpath("//body/div[@id='login']/div[@id='login_content']/div[@id='gigya-login-screen']/form[@id='gigya-login-form']/div[2]/div[3]/div[1]/input[1]"));
                 WebElement passwordField = driver.findElement(By.xpath("//body/div[@id='login']/div[@id='login_content']/div[@id='gigya-login-screen']/form[@id='gigya-login-form']/div[2]/div[3]/div[2]/input[1]"));
-                if(emailField.getAttribute("required")!=null && passwordField.getAttribute("required")!=null){
+                System.out.println(emailField.isDisplayed());
+                System.out.println(passwordField.isDisplayed());
+
+               if(emailField.isDisplayed()==true && passwordField.isDisplayed()==true){
                     System.out.println("Message 'This field is required' is displayed for both Username and Password fields");
                 }else {
                     System.out.println("Verification failed");
