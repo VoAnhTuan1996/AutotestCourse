@@ -32,7 +32,7 @@ public class Homework_Day10_bai4 {
     }
 
     public static void registerRelativesPerson() throws InterruptedException {
-        WebElement rdB = driver.findElement(By.xpath("//label[@for='mat-radio-3-input']//div[@class='mat-radio-inner-circle']"));
+        WebElement rdB = driver.findElement(By.xpath("//label[@for='mat-radio-3-input']//input"));
         rdB.click();
         Thread.sleep(5000);
     }
