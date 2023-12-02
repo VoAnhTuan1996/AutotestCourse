@@ -54,13 +54,14 @@ public class Day11_DataDrivenTesting {
         return dataLogin;
     }*/
     @Test(dataProviderClass = DataDrivenTesting.class, dataProvider = "TC_Login123")
-    public void TC_Login(String email, String password){
+    public void TC_Login(String email, String password) throws InterruptedException {
         WebElement txtEmail = driver.findElement(By.xpath("//input[@name='email']"));
         txtEmail.sendKeys(email);
         WebElement txtPassword = driver.findElement(By.xpath("//input[@name='pass']"));
         txtPassword.sendKeys(password);
         WebElement btnSubmit = driver.findElement(By.xpath("//button[@type='submit']"));
         btnSubmit.click();
+        Thread.sleep(5000);
     }
 
     @AfterClass

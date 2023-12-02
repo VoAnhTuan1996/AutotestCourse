@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-01T23:51:26 ICT" name="Default Suite" finished-at="2023-12-01T23:52:08 ICT" duration-ms="42327">
+    <groups>
+    </groups>
+    <test started-at="2023-12-01T23:51:26 ICT" name="AT21_MAVEN_PROJECT" finished-at="2023-12-01T23:52:08 ICT" duration-ms="42327">
+      <class name="test.TC_AddCustomer">
+        <test-method is-config="true" signature="initBrowser()[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:51:26 ICT" name="initBrowser" finished-at="2023-12-01T23:51:28 ICT" duration-ms="2478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:51:29 ICT" name="openUrl" finished-at="2023-12-01T23:51:33 ICT" duration-ms="4066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:51:33 ICT" name="addCustomerTest" data-provider="CustomerData" finished-at="2023-12-01T23:51:37 ICT" duration-ms="4070" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gbWNDMgX]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[FpJKeRqp]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[test1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[address 1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0123456789]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:51:37 ICT" name="openUrl" finished-at="2023-12-01T23:51:38 ICT" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:51:38 ICT" name="addCustomerTest" data-provider="CustomerData" finished-at="2023-12-01T23:51:42 ICT" duration-ms="4038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xPOpubfX]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[oGbWeMfR]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[address 2]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:51:42 ICT" name="openUrl" finished-at="2023-12-01T23:51:42 ICT" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:51:42 ICT" name="addCustomerTest" data-provider="CustomerData" finished-at="2023-12-01T23:51:46 ICT" duration-ms="4053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[KSYHXFCm]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[VAlXrnKH]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[test3@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0513498710]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:51:46 ICT" name="openUrl" finished-at="2023-12-01T23:51:46 ICT" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:51:46 ICT" name="addCustomerTest" data-provider="CustomerData" finished-at="2023-12-01T23:51:50 ICT" duration-ms="4092" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_04]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QcruFMKi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pFBuObqO]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[test4@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[address 4]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:51:50 ICT" name="openUrl" finished-at="2023-12-01T23:51:51 ICT" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:51:51 ICT" name="addCustomerTest" data-provider="CustomerData" finished-at="2023-12-01T23:51:55 ICT" duration-ms="4069" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_05]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[zaYFxuqu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[GPpNmFSs]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[test5@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[address 5]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0884465329]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:51:55 ICT" name="openUrl" finished-at="2023-12-01T23:51:55 ICT" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:51:55 ICT" name="addCustomerTest" data-provider="CustomerData" finished-at="2023-12-01T23:51:59 ICT" duration-ms="4079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_06]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CdWXHngP]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TGqcLmsN]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[test6]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[address 6]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0913842298]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:51:59 ICT" name="openUrl" finished-at="2023-12-01T23:51:59 ICT" duration-ms="311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:51:59 ICT" name="addCustomerTest" data-provider="CustomerData" finished-at="2023-12-01T23:52:04 ICT" duration-ms="4091" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_07]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aamMxLdt]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hqdzFORW]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[test7@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[address 7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0779954312]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:52:04 ICT" name="openUrl" finished-at="2023-12-01T23:52:04 ICT" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:52:04 ICT" name="addCustomerTest" data-provider="CustomerData" finished-at="2023-12-01T23:52:08 ICT" duration-ms="4051" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_08]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BiTCjrnb]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ZqvvZCoZ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[test8@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[address 8]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.TC_AddCustomer@6f46426d]" started-at="2023-12-01T23:52:08 ICT" name="tearDown" finished-at="2023-12-01T23:52:08 ICT" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.TC_AddCustomer -->
+    </test> <!-- AT21_MAVEN_PROJECT -->
+  </suite> <!-- Default Suite -->
+</testng-results>

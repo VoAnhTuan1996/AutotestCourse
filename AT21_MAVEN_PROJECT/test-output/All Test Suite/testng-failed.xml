@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="C:/Users/ADMIN/IdeaProjects/AT21_MAVEN_PROJECT/AT21_MAVEN_PROJECT(failed)">
+    <classes>
+      <class name="Day11_TestNG">
+        <methods>
+          <include name="Test_Login_TC01"/>
+          <include name="initBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Day11_TestNG -->
+    </classes>
+  </test> <!-- C:/Users/ADMIN/IdeaProjects/AT21_MAVEN_PROJECT/AT21_MAVEN_PROJECT(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

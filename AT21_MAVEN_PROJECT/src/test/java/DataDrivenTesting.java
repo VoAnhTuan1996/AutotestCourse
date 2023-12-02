@@ -16,15 +16,15 @@ public class DataDrivenTesting {
     public static void main(String[] agrs) throws IOException {
         String path = System.getProperty("user.dir");
         String file = path + "\\src\\test\\resources\\TC_Login.xlsx";
-        String nameSheet = "Sheet1";
+        String nameSheet = "Login";
         //read file excel
-//        FileInputStream excelFile = new FileInputStream(file);
-//        //truy cập vào file data test
-//        excelWBook = new XSSFWorkbook(excelFile);
-//        excelSheet = excelWBook.getSheet(nameSheet);
-//        System.out.println(getCellData(1,0));
+        FileInputStream excelFile = new FileInputStream(file);
+        //truy cập vào file data test
+   /*     excelWBook = new XSSFWorkbook(excelFile);
+        excelSheet = excelWBook.getSheet(nameSheet);
+        System.out.println(getCellData(1,0));
 
-        getTableArray(file,nameSheet);
+        getTableArray(file,nameSheet);*/
     }
 
     //read data from excel
