@@ -10,9 +10,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.Obj.AddCustomerPageObj;
+import pages.UI.AddCustomerUI;
 
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 
 import static core.BasePage.*;
@@ -59,22 +59,18 @@ public class TC_AddCustomer extends BaseTest{
 
     @Test(dataProvider="CustomerData")
      public void addCustomerTest(String id, String firstName, String lastName, String email, String address, String phoneNumber, String message) throws InterruptedException {
-        WebElement firstNameField = driver.findElement(By.xpath("//input[@id='fname']"));
-        WebElement lastNameField = driver.findElement(By.xpath("//input[@id='lname']"));
-        WebElement emailField = driver.findElement(By.xpath("//input[@id='email']"));
-        WebElement addressField = driver.findElement(By.xpath("//textarea[@id='message']"));
-        WebElement phoneNumberField = driver.findElement(By.xpath("//input[@id='telephoneno']"));
-        WebElement errorMessageFname = driver.findElement(By.id("message"));
-        WebElement errorMessageLname = driver.findElement(By.id("message50"));
-        WebElement errorMessageEmail = driver.findElement(By.id("message9"));
-        WebElement errorMessageAddress = driver.findElement(By.id("message3"));
-        WebElement errorMessagePhone = driver.findElement(By.id("message7"));
-        firstNameField.sendKeys(firstName);
-        lastNameField.sendKeys(lastName);
-        emailField.sendKeys(email);
-        addressField.sendKeys(address);
-        phoneNumberField.sendKeys(phoneNumber);
-        phoneNumberField.sendKeys("\t"); // hêre
+        objAddCustomer.enterFirstNameTxt(firstName);
+        objAddCustomer.enterLastNameTxt(lastName);
+        objAddCustomer.enterEmailTxt(email);
+        objAddCustomer.enterAddressTextArea(address);
+        objAddCustomer.enterPhoneNumber(phoneNumber);
+        objAddCustomer.enterPhoneNumber("\t");
+        WebElement errorMessageFname = objAddCustomer.getElementById(driver, AddCustomerUI.MESSAGE_FNAME);
+        WebElement errorMessageLname = objAddCustomer.getElementById(driver, AddCustomerUI.MESSAGE_LNAME);
+        WebElement errorMessageEmail = objAddCustomer.getElementById(driver, AddCustomerUI.MESSAGE_EMAIL);
+        WebElement errorMessageAddress = objAddCustomer.getElementById(driver, AddCustomerUI.MESSAGE_ADDRESS);
+        WebElement errorMessagePhone = objAddCustomer.getElementById(driver, AddCustomerUI.MESSAGE_PHONE);
+
         if(firstName.isEmpty()){
             message = errorMessageFname.getText();
             System.out.println(message);
@@ -109,11 +105,5 @@ public class TC_AddCustomer extends BaseTest{
 
         // Perform further actions or assertions on the added customer
 
-        // Clear the fields
-        firstNameField.clear();
-        lastNameField.clear();
-        emailField.clear();
-        addressField.clear();
-        phoneNumberField.clear();
     }
 }

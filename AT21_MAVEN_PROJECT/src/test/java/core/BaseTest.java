@@ -8,7 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
-    public WebDriver driver;
+    public static WebDriver driver;
     public String BaseUrl = "https://demo.guru99.com/";
     @BeforeClass
     public void initBrowser(){

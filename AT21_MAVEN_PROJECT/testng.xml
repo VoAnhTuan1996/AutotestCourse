@@ -7,3 +7,15 @@
         </classes>
     </test>
 </suite>
+<suite name="Extent Report Demo">
+
+<listeners>
+    <listener class-name ="Utils.ExtentListeners"/>
+</listeners>
+
+<test name="Login Tests">
+    <classes>
+        <class name="test.LoginTest"/>
+    </classes>
+</test> <!-- Test -->
+</suite> <!-- Suite -->

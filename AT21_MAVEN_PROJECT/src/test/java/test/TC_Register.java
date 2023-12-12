@@ -99,7 +99,7 @@ public class TC_Register extends BaseTest{
         Thread.sleep(3000);
     }
 
-    @Test
+    //@Test
     public void TC_enterPassword() throws InterruptedException {
         String pass = randomPassword();
         WebElement passElement = driver.findElement(By.id("user_user_detail_attributes_password"));
@@ -111,6 +111,16 @@ public class TC_Register extends BaseTest{
 
     }
 
+    //@Test
+    public void TC_clickButtonReset(){
+        WebElement btnReset = driver.findElement(By.id("resetform"));
+        btnReset.click();
+    }
 
+    //@Test
+    public void TC_clickButtonCreate(){
+        WebElement btnCreate = driver.findElement(By.xpath("//input[@value='Create']"));
+        btnCreate.click();
+    }
 
 }

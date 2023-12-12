@@ -3,14 +3,16 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="AT21_MAVEN_PROJECT(failed)">
     <classes>
-      <class name="test.TC_AddCustomer">
+      <class name="test.LoginTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="openUrl"/>
-          <include name="initBrowser"/>
-          <include name="addCustomerTest" invocation-numbers="3"/>
+          <include name="verifyforgetPasswordLink"/>
+          <include name="setup"/>
+          <include name="verifyLoginPageTitle"/>
+          <include name="closeBrowser"/>
+          <include name="HomeTest"/>
+          <include name="verifyLinkedIn"/>
         </methods>
-      </class> <!-- test.TC_AddCustomer -->
+      </class> <!-- test.LoginTest -->
     </classes>
   </test> <!-- AT21_MAVEN_PROJECT(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

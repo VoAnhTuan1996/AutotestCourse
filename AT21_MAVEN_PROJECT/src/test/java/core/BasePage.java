@@ -22,9 +22,13 @@ public class BasePage {
     public By getByXpath(String locator){
         return By.xpath(locator);
     }
-
+    public By getById(String locator) {return By.id(locator);}
     public WebElement getElementByXpath(WebDriver driver, String locator){
         return driver.findElement(getByXpath(locator));
+    }
+
+    public WebElement getElementById(WebDriver driver, String locator){
+        return driver.findElement(getById(locator));
     }
 
     public void clickToElement(WebDriver driver, String locator){
